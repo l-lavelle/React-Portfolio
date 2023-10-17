@@ -1,7 +1,8 @@
 {
   "name": "react-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "Lauren Lavelle Professional Portfolio",
   "main": "vite.config.js",
   "scripts": {
     "dev": "vite",
