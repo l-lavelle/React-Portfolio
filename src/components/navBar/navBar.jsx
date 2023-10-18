@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import './navBar.css'
 
+// How to fade in element slowly time the loading in of page elements 
 export default function NavBar() {
     const [showComponent, setShowComponent] = useState(false)
 
@@ -12,7 +14,7 @@ export default function NavBar() {
     return (
         <>
         {showComponent &&
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fadeIn">
         <div class="container-fluid">
           <a class="navbar-brand">Lauren Lavelle</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,3 +41,4 @@ export default function NavBar() {
       </>
     );
   }
+
