@@ -12,18 +12,17 @@ const router = createBrowserRouter([
     {
       path: '/',
       element: <App />,
-    //   errorElement: <Error />,
       children: [
         {
           index: true,
           element: <About />,
         },
         {
-          path: '/About',
+          path: '/Portfolio',
           element: <Portfolio />,
         },
         {
-          path: '/Blog',
+          path: '/Contact',
           element: <Contact />,
         },
       ],

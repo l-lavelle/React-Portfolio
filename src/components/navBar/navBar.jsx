@@ -1,19 +1,22 @@
+import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import './navBar.css'
 
 // How to fade in element slowly time the loading in of page elements 
 export default function NavBar() {
-    const [showComponent, setShowComponent] = useState(false)
+  const currentPage = useLocation().pathname;
 
-    useEffect(()=>{
-        setInterval(()=>{
-            setShowComponent(!showComponent)
-        }, 5000)
-    }, [])
+  const [showComponent, setShowComponent] = useState(false)
+
+    // useEffect(()=>{
+    //     setInterval(()=>{
+    //         setShowComponent(!showComponent)
+    //     }, 5000)
+    // }, [])
 
     return (
         <>
-        {showComponent &&
+        {showComponent ||
         <nav class="navbar navbar-expand-lg bg-body-tertiary fadeIn">
         <div class="container-fluid">
           <a class="navbar-brand">Lauren Lavelle</a>
@@ -23,13 +26,28 @@ export default function NavBar() {
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+              <Link
+                  to="/"
+                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                >
+                  Home
+              </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+              <Link
+                  to="/Portfolio"
+                  className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                >
+                  Portfolio
+             </Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+              <Link
+                  to="/Contact"
+                  className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                >
+                  Contact
+             </Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
