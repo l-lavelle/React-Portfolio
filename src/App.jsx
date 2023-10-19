@@ -1,15 +1,17 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
 import NavBar from './components/navBar/navBar';
 
 
 function App() {
     return (
         <>
-        <NavBar />
-        <Portfolio />
+            <NavBar />
+            <main>
+                <Outlet />
+            </main>
         </>
-         
-         );
+    );
 }
 
 export default App;
