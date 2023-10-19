@@ -4,6 +4,7 @@ import {useState} from 'react';
 // Error messgae
 // CSS
 // Actually send email
+// Message that email has been sent 
 
 function Contact(){
     const [errorMessage, setErrorMessage] = useState('');
@@ -18,18 +19,18 @@ function Contact(){
     <div className="container">
         <h1 class="text-center">Contact Me</h1>
         <form>
-        <h3 class="text-left">Name</h3>
+        <h4 class="text-left">Name</h4>
         <input class="form-control"
             name="name"
             type="text"
         />
-        <h3>Email</h3>
+        <h4>Email</h4>
         <input  
             class="form-control"
             name="email"
             type="email"
         />
-        <h3>Message</h3>
+        <h4>Message</h4>
         <textarea class="form-control"
             name="massage"
             type="text"
