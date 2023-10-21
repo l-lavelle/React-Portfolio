@@ -9,9 +9,10 @@ export default function NavBar() {
   const [showComponent, setShowComponent] = useState(false)
 
     // useEffect(()=>{
-    //     setInterval(()=>{
+    //   const timer = setTimeout(()=>{
     //         setShowComponent(!showComponent)
     //     }, 5000)
+    //     return () => clearTimeout(timer)
     // }, [])
 
     return (
@@ -19,38 +20,40 @@ export default function NavBar() {
         {showComponent ||
         <nav class="navbar navbar-expand-lg bg-body-tertiary fadeIn">
         <div class="container-fluid">
-          <a class="navbar-brand">Lauren Lavelle</a>
+              <Link
+                  to="/"
+                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                >
+                  Lauren Lavelle
+              </Link>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-              <Link
-                  to="/"
-                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-                >
-                  Home
+                <Link
+                    to="/About"
+                    className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+                  >
+                    About
               </Link>
+             </li>
+             <li class="nav-item">
+                <Link
+                    to="/Portfolio"
+                    className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                  >
+                    Portfolio
+                </Link>
               </li>
               <li class="nav-item">
-              <Link
-                  to="/Portfolio"
-                  className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
-                >
-                  Portfolio
-             </Link>
-              </li>
-              <li class="nav-item">
-              <Link
-                  to="/Contact"
-                  className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-                >
-                  Contact
-             </Link>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <Link
+                    to="/Resume"
+                    className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                  >
+                    Resume
+                </Link>
               </li>
             </ul>
           </div>

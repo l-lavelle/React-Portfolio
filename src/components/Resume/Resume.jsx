@@ -6,7 +6,7 @@ import {useState} from 'react';
 // Actually send email
 // Message that email has been sent 
 
-function About(){
+function Resume(){
     const [errorMessage, setErrorMessage] = useState('');
 
     // const handleFormSubmit = (e) =>{
@@ -24,13 +24,13 @@ function About(){
             name="name"
             type="text"
         />
-        <h4>About</h4>
+        <h4>Email</h4>
         <input  
             class="form-control"
             name="email"
             type="email"
         />
-        <h4>About</h4>
+        <h4>Message</h4>
         <textarea class="form-control"
             name="massage"
             type="text"
@@ -49,4 +49,4 @@ function About(){
   )
 }
 
-export default About;
+export default Resume;
