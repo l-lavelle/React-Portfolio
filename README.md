@@ -8,3 +8,5 @@ Bring nav bar in after time: https://www.youtube.com/watch?v=jP62dlwaqpk
 fade ideas;
 https://www.youtube.com/watch?v=T1jHxdJi1zw
 https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
+
+react gallaery- https://www.youtube.com/watch?v=AnG7LMcX_z8
