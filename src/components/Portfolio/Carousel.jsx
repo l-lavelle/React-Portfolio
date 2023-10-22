@@ -13,25 +13,35 @@ export const Carousel = ({data}) => {
     }
     return(
     <>
-    <h1 className="text-center">Portfolio Projects</h1>
-    <div className="carousel">
-        <i className="bi bi-arrow-left-circle-fill arrow arrow-left" onClick={prevProject}></i>
-        {data.map((item,index)=>{
-        return (
-            <>
-            <img src={item.pic.src} key={index} className={project===index ? "slide" : "slide-hidden"}/>
-            <p key={index}className = {project===index ? "slide" : "slide-hidden"}>{`${item.name}`}</p>
-            </>
-        )
-        })}
-        <i className="bi bi-arrow-right-circle-fill arrow arrow-right" onClick={nextProject}></i>
-    <span className="indicators">
-        {data.map((_,index)=>{
-            return <button key={index} onClick={()=>setProject(index)} className={project === index ? "indeicator" : "indicator-inactive"}></button>
-        })}
-    </span>
-   
-    </div>
+        <h1 className="text-center">Portfolio Projects</h1>
+        <div className="portfolio">
+            <div className="carousel">
+                <i className="bi bi-arrow-left-circle-fill arrow arrow-left" onClick={prevProject}></i>
+                {data.map((item,index)=>{
+                return (
+                    <>
+                    <img src={item.pic.src} key={index} className={project===index ? "slide" : "slide-hidden"}/>
+                    {/* <p key={index}className = {project===index ? "slide" : "slide-hidden"}>{`${item.name}`}</p> */}
+                    </>
+                )
+                })}
+                <i className="bi bi-arrow-right-circle-fill arrow arrow-right" onClick={nextProject}></i>
+            <span className="indicators">
+                {data.map((_,index)=>{
+                    return <button key={index} onClick={()=>setProject(index)} className={project === index ? "indicator" : "indicator-inactive"}></button>
+                })}
+            </span>
+            </div>
+            <div className="project-info">
+            {data.map((item,index)=>{
+                return (
+                    <>
+                    <p key={index}className = {project===index ? "slide" : "slide-hidden"}>{`${item.summary}`}</p>
+                    </>
+                )
+                })}
+            </div>
+        </div>
     </>
     )
 }
