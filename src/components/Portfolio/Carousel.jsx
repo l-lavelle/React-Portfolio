@@ -21,7 +21,6 @@ export const Carousel = ({data}) => {
                 return (
                     <>
                     <img src={item.pic.src} key={index} className={project===index ? "slide" : "slide-hidden"}/>
-                    {/* <p key={index}className = {project===index ? "slide" : "slide-hidden"}>{`${item.name}`}</p> */}
                     </>
                 )
                 })}
@@ -36,7 +35,31 @@ export const Carousel = ({data}) => {
             {data.map((item,index)=>{
                 return (
                     <>
-                    <p key={index}className = {project===index ? "slide" : "slide-hidden"}>{`${item.summary}`}</p>
+                    <h3 key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.name}`}</h3>
+                    </>
+                )
+                })}
+            <h4>Summary</h4>
+            {data.map((item,index)=>{
+                return (
+                    <>
+                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.summary}`}</p>
+                    </>
+                )
+                })}
+            <h4>Contributions</h4>
+            {data.map((item,index)=>{
+                return (
+                    <>
+                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.contributions}`}</p>
+                    </>
+                )
+                })}
+            <h4>Techonologies & Tools</h4>
+            {data.map((item,index)=>{
+                return (
+                    <>
+                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.Tools}`}</p>
                     </>
                 )
                 })}

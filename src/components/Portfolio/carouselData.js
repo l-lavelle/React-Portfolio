@@ -18,8 +18,7 @@ const slides = [
     },
     thumbnail: "https://picsum.photos/id/1018/250/150/",
     name: "Movie Project",
-    summary:
-      "A blog site where users can create blogs and comment on posts from other users",
+    summary: "A blog site where users can create ",
     contributions:
       "MVC architectural design, authentication system, Rest API allowing CRUD operations for posts",
     Tools:
