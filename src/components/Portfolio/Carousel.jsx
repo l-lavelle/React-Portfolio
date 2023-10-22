@@ -1,6 +1,8 @@
 import "./Carousel.css"
 import{useState} from "react";
 
+// Idea with more project able to look at tags:(frontend, back-end, design)
+
 export const Carousel = ({data}) => {
     const [project, setProject]=useState(0)
 

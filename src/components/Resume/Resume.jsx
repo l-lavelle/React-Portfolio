@@ -1,10 +1,29 @@
-import {useState} from 'react';
+import {useRef} from 'react';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 function Resume(){
-
+const pdfRef = useRef();
+const downloadPDF = () =>{
+        console.log(30)
+       const input= pdfRef.current; 
+       html2canvas(input).then((canvas)=>{
+        const imgData =canvas.toDataURL('image/png');
+        const pdf = new jsPDF('p','mm','a4', true );
+        const pdfWidth = pdf.internal.pageSize.getWidth();
+        const pdfHeight = pdf.internal.pageSize.getHeight();
+        const imgWidth = canvas.width;
+        const imgHeight = canvas.height;
+        const ratio = Math.min(pdfWidth/imgWidth, pdfHeight/imgHeight);
+        const imgX = (pdfWidth -imgWidth * ratio)/2;
+        const imgY = 30;
+        pdf.addImage(imgData, "PNG", imgX, imgY, imgWidth * ratio, imgHeight*ratio);
+        pdf.save('Lavelle-resume.pdf')
+       })
+}
     return(
     <>
-    <div className="container">
+    <div className="container" ref= {pdfRef}>
         <p>
         Full stack web developer with a background in the healthcare field and a passion for learning. Interested in using problem solving skills to create collaborative, accessible, and user-friendly applications. Looking to use and expand my skills to bring unique insights to the role. 
         </p>
@@ -47,6 +66,7 @@ Python for Everybody Specialization – by University of Michigan on Coursera			
  
         </p>
   </div>
+  <button className='btn btn-primary'onClick={downloadPDF}>Download PDF</button>
   </>
   )
 }
