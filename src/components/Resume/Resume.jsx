@@ -1,19 +1,7 @@
 import {useState} from 'react';
 
-// validate email with helper??
-// Error messgae
-// CSS
-// Actually send email
-// Message that email has been sent 
-
 function Resume(){
     const [errorMessage, setErrorMessage] = useState('');
-
-    // const handleFormSubmit = (e) =>{
-    //     e.preventDefault();
-
-
-    // }
 
     return(
     <div className="container">
