@@ -12,6 +12,7 @@ function About(){
     <div >
         <img  className="profile-pic" src="/images/profilePic.jpg"></img>
     </div>
+    
     </>
   )
 }
