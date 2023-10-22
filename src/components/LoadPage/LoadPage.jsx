@@ -1,7 +1,16 @@
 import videoBG from '../../assets/home-video.mp4'
 import './LoadPage.css'
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'
 
 function LoadPage() {
+  const navigate = useNavigate()
+  useEffect(()=>{
+      setTimeout(()=>{
+            navigate('/About')
+        }, 5000)
+    }, [])
+
     return (
       <div>
         <video autoPlay muted id="bg-video">

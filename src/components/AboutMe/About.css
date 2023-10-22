@@ -3,17 +3,31 @@
   max-width: 500px;
   height: auto;
 }
-.about-me {
+.responsive-about {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.top-about {
+  width: 600px;
+  height: auto;
+  margin: 2.5%;
+}
+.intro-text {
+  font-size: 35px;
+}
+.about-me {
+  margin: 2.5%;
+}
 @media screen and (min-width: 1200px) {
-  .about-me {
+  .responsive-about {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .top-about {
+    margin-right: 5%;
   }
 }
