@@ -1,8 +1,3 @@
-.profile-pic {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
 .responsive-about {
   display: flex;
   flex-direction: column;
@@ -15,11 +10,23 @@
   margin: 2.5%;
 }
 .intro-text {
-  font-size: 35px;
+  font-size: 30px;
+}
+.profile-pic {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 .about-me {
   margin: 2.5%;
 }
+.clip-art {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* Screen responsiveness laptop */
 @media screen and (min-width: 1200px) {
   .responsive-about {
     display: flex;
@@ -29,5 +36,15 @@
   }
   .top-about {
     margin-right: 5%;
+  }
+  .about-me {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .clip-art {
+    width: 500px;
+    height: auto;
   }
 }

@@ -37,7 +37,7 @@ export const Carousel = ({data}) => {
             {data.map((item,index)=>{
                 return (
                     <>
-                    <h3 key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.name}`}</h3>
+                    <h3 key={index} className = {project===index ? "project-text" : "project-text-hidden"}>{`${item.name}`}</h3>
                     </>
                 )
                 })}
@@ -45,7 +45,7 @@ export const Carousel = ({data}) => {
             {data.map((item,index)=>{
                 return (
                     <>
-                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.summary}`}</p>
+                    <p key={index} className = {project===index ? "project-text" : "project-text-hidden"}>{`${item.summary}`}</p>
                     </>
                 )
                 })}
@@ -53,7 +53,7 @@ export const Carousel = ({data}) => {
             {data.map((item,index)=>{
                 return (
                     <>
-                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.contributions}`}</p>
+                    <p key={index} className = {project===index ? "project-text" : "project-text-hidden"}>{`${item.contributions}`}</p>
                     </>
                 )
                 })}
@@ -61,8 +61,15 @@ export const Carousel = ({data}) => {
             {data.map((item,index)=>{
                 return (
                     <>
-                    <p key={index} className = {project===index ? "slide" : "slide-hidden"}>{`${item.Tools}`}</p>
+                    <p key={index} className = {project===index ? "project-text" : "project-text-hidden"}>{`${item.Tools}`}</p>
                     </>
+                )
+                })}
+            {data.map((item,index)=>{
+                return (
+                    <a  href={item.github}>
+                        <img className={project===index ? "slide gitlink" : "project-text-hidden"} src="/images/github.png" />
+                    </a>
                 )
                 })}
             </div>

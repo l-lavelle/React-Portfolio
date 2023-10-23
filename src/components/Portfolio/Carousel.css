@@ -63,6 +63,7 @@
 }
 
 .portfolio {
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,9 +72,25 @@
 
 @media screen and (min-width: 1200px) {
   .portfolio {
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
+}
+
+.gitlink {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.project-text {
+  color: black;
+}
+.project-text-hidden {
+  display: none;
+}
+.project-info {
+  margin-left: 2.5%;
 }

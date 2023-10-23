@@ -13,3 +13,6 @@ react gallaery- https://www.youtube.com/watch?v=AnG7LMcX_z8
 https://github.com/xiaolin/react-image-gallery
 
 https://www.youtube.com/watch?v=QpsGo8kZiTo
+
+link: veezy.com for clipart on about page
+https://www.vecteezy.com/search?qterm=web-development-women&content_type=vector
