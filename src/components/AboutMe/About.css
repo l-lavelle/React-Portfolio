@@ -12,6 +12,10 @@
 .intro-text {
   font-size: 30px;
 }
+.about-icon {
+  max-width: 45px;
+  margin: 0 2%;
+}
 .profile-pic {
   width: 100%;
   max-width: 500px;
