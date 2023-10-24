@@ -7,12 +7,12 @@ import { useNavigate } from 'react-router-dom'
 import ReactTyped from 'react-typed';
 
 function LoadPage() {
-  const navigate = useNavigate()
-  useEffect(()=>{
-      setTimeout(()=>{
-            navigate('/About')
-        }, 5000)
-    }, [])
+  // const navigate = useNavigate()
+  // useEffect(()=>{
+  //     setTimeout(()=>{
+  //           navigate('/About')
+  //       }, 5000)
+  //   }, [])
 
     return (
       <div>
