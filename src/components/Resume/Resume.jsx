@@ -24,7 +24,7 @@ const downloadPDF = () =>{
        })
 }
     return(
-    <>
+    <div className='fadeIn'>
    
     <button type="button" className='btn btn-outline-secondary float-right'onClick={downloadPDF}>Download PDF</button>
     <div ref= {pdfRef}>
@@ -114,7 +114,7 @@ const downloadPDF = () =>{
         </div>
   </div>
   </div>
-  </>
+  </div>
   )
 }
 

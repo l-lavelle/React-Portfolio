@@ -8,11 +8,11 @@ import ReactTyped from 'react-typed';
 
 function LoadPage() {
   const navigate = useNavigate()
-  // useEffect(()=>{
-  //     setTimeout(()=>{
-  //           navigate('/About')
-  //       }, 5000)
-  //   }, [])
+  useEffect(()=>{
+      setTimeout(()=>{
+            navigate('/About')
+        }, 5000)
+    }, [])
 
     return (
       <div>

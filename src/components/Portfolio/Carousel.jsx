@@ -14,7 +14,7 @@ export const Carousel = ({data}) => {
         setProject(project === 0? data.length-1 : project-1)
     }
     return(
-    <>
+    <div className="fadeIn">
         <h1 className="text-center">Portfolio Projects</h1>
         <div className="portfolio">
             <div className="carousel">
@@ -74,6 +74,6 @@ export const Carousel = ({data}) => {
                 })}
             </div>
         </div>
-    </>
+    </div>
     )
 }

@@ -34,7 +34,7 @@
 }
 
 .fadeIn {
-  animation: fadeInAnimation 1s linear;
+  animation: fadeInAnimation 2s linear;
 }
 
 @keyframes fadeInAnimation {

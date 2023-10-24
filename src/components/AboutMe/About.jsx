@@ -6,7 +6,7 @@ function About(){
     return(
     <>
      
-    <div className="responsive-about">
+    <div className="responsive-about fadeIn">
       <div className="top-about">
         <h1 className="text-center display-1">Full Stack Developer</h1>
         <p className="text-center intro-text">Passoinate about creating creating: 
