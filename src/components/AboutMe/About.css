@@ -3,11 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .top-about {
   width: 600px;
   height: auto;
   margin: 2.5%;
+}
+.top-about p span {
+  display: block;
+  margin: 5px 0;
 }
 .intro-text {
   font-size: 30px;
@@ -22,7 +27,9 @@
   height: auto;
 }
 .about-me {
-  margin: 2.5%;
+  margin: 3%;
+  justify-content: center;
+  align-items: center;
 }
 .clip-art {
   width: 100%;
@@ -46,9 +53,21 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
+    margin: 0 5%;
+  }
+  .profile-pic {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
   }
   .clip-art {
     width: 500px;
     height: auto;
   }
+  .image-center {
+    margin-right: 2.5%;
+  }
+}
+.image-center {
+  text-align: center;
 }

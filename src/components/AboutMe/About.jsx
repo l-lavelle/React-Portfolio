@@ -4,16 +4,18 @@ function About(){
   
 
     return(
-    <>
-     
-    <div className="responsive-about fadeIn">
+    <div className="fadeIn">
+    <div className="responsive-about">
       <div className="top-about">
-        <h1 className="text-center display-1">Full Stack Developer</h1>
-        <p className="text-center intro-text">Passoinate about creating creating: 
+      <div class="cir cir-1">
+        <h1 className="text-center display-1 textttt">Full Stack Developer</h1>
+        <p className="text-center intro-text">Passoinate About Creating: 
         <span> <img className="about-icon" src="/images/collaborative.png"></img>Collaborative</span>
         <span><img className="about-icon" src="/images/accessibility.png"></img>Accessible</span>  
-        <span> <img className="about-icon" src="/images/user-friendly.png"></img>user-friendly </span> 
+        <span> <img className="about-icon" src="/images/user-friendly.png"></img>User-Friendly </span> 
         Applications</p>
+        </div>
+       
       </div>
       <div >
           <img  className="profile-pic" src="/images/profilePic.jpg"></img>
@@ -21,17 +23,17 @@ function About(){
     </div>
     <div className="about-me">
       <div>
-      <h3>about me </h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <h3 className="text-center">About Me </h3>
+      <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
       </div>
-      <div >
+      <div className="image-center">
       <img className="clip-art" src='/images/web-dev-clip-art.jpg'></img>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 
