@@ -30,6 +30,7 @@
   margin: 3%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 35px;
 }
 .clip-art {
   width: 100%;
@@ -54,6 +55,7 @@
     align-items: center;
     justify-content: center;
     margin: 0 5%;
+    margin-bottom: 35px;
   }
   .profile-pic {
     width: 100%;
@@ -65,7 +67,10 @@
     height: auto;
   }
   .image-center {
-    margin-right: 2.5%;
+    margin-right: 6%;
+  }
+  .about-me p {
+    max-width: 650px;
   }
 }
 .image-center {
