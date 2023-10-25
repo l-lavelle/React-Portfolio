@@ -4,10 +4,12 @@ function About(){
   
 
     return(
-    <div className="fadeIn">
+    <div className="fadeIn trial">
+      <div className="circle"></div>
+      <div className="rectangle"></div>
     <div className="responsive-about">
       <div className="top-about">
-      <div class="cir cir-1">
+      <div>
         <h1 className="text-center display-1 textttt">Full Stack Developer</h1>
         <p className="text-center intro-text">Passoinate About Creating: 
         <span> <img className="about-icon" src="/images/collaborative.png"></img>Collaborative</span>
