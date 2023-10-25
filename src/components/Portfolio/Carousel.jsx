@@ -1,8 +1,10 @@
 import "./Carousel.css"
 import{useState} from "react";
 
-// Idea with more project able to look at tags:(frontend, back-end, design)
-
+// 
+// smaller pics for smaller screens
+// update data when done
+//
 export const Carousel = ({data}) => {
     const [project, setProject]=useState(0)
 
@@ -15,7 +17,7 @@ export const Carousel = ({data}) => {
     }
     return(
     <div className="fadeIn">
-        <h1 className="text-center">Portfolio Projects</h1>
+        <h1 className="text-center mt-3">Portfolio Projects</h1>
         <div className="portfolio">
             <div className="carousel">
                 <i className="bi bi-arrow-left-circle-fill arrow arrow-left" onClick={prevProject}></i>
@@ -67,9 +69,14 @@ export const Carousel = ({data}) => {
                 })}
             {data.map((item,index)=>{
                 return (
+                    <>
                     <a  href={item.github}>
                         <img className={project===index ? "slide gitlink" : "project-text-hidden"} src="/images/github.png" />
                     </a>
+                    <a  href={item.link}>
+                    <img className={project===index ? "slide web-link" : "project-text-hidden"} src="/images/link.png" />
+                    </a>
+                    </>
                 )
                 })}
             </div>
