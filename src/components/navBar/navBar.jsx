@@ -22,7 +22,7 @@ export default function NavBar() {
         <div class="container-fluid">
               <Link
                   to="/"
-                  className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                  className={currentPage === '/' ? 'nav-link ll-font active' : 'nav-link ll-font'}
                 >
                   Lauren Lavelle
               </Link>
